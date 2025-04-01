@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sample"
+        android:requestLegacyExternalStorage="true"
+        tools:targetApi="31"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.example.gplusin.activity.DeleteAccount"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.fragment.Holidays"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.fragment.business_expense.Business_expense_Update"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.fragment.business_expense.Business_expense_History"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.fragment.business_expense.Business_expense_Add"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.fragment.adhoc_income.AdhocIncomeUpdate"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.fragment.adhoc_income.AdhocIncomeAdd"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.fragment.adhoc_income.AdhocIncomeHistory"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.fragment.adhocworkhour.AdhocWorkDetaileHistory"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.fragment.adhocworkhour.AdhocworkhourActivityUpdate"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.fragment.adhocworkhour.AdhocworkhourActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.fragment.leave.LeaveActivityUpdate"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.fragment.employment_details.AddEmployeeDetaileFragment"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.fragment.employment_details.AddEmployeeDetaileUpdate"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.fragment.employment_details.EmployeeDetailsHistory"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.fragment.leave.LeaveDetaileHistory"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.fragment.leave.LeaveActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+<!--        <activity-->
+<!--            android:name="com.example.gplusin.activity.EditProfile"-->
+<!--            android:exported="false"-->
+<!--            android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.example.gplusin.activity.CaptureData"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.gplusin.activity.Historical_add_update"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.gplusin.activity.Historical_add"
+            android:exported="false" />
+        <activity
+            android:name="com.example.gplusin.profile.Profile"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.gplusin.activity.OtpActivityLogin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.gplusin.activity.UserLogin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.gplusin.activity.ForgetPassword"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.gplusin.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.gplusin.activity.OtpActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.gplusin.activity.LoginForm"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.gplusin.activity.ChooseLoginPage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.example.gplusin.service.DownloadService" />
+
+        <activity
+            android:name="com.example.gplusin.activity.Splash"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

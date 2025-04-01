@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/purple_700"
+    tools:context=".fragment.addupdate.AddViewFragment">
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/frameenploydetaile"
+        android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/employment_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="56.0dip"
+            android:text="Employment Details"
+            android:textAllCaps="false"
+            android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" app:cornerRadius="8.0dip" style="@style/whiteButtonloginhomepage111111" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/framelayout"
+        android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/leavesdetaile"
+            android:layout_width="fill_parent" android:layout_height="56.0dip"
+            android:text="Leave Details" android:textAllCaps="false" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" app:cornerRadius="8.0dip" style="@style/whiteButtonloginhomepage111111" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/frameadhoc_income"
+        android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/adhoc_income"
+            android:layout_width="fill_parent" android:layout_height="56.0dip"
+            android:text="Adhoc Income" android:textAllCaps="false" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" app:cornerRadius="8.0dip" style="@style/whiteButtonloginhomepage111111" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/framebussiness_expense"
+        android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bussiness_expense"
+            android:layout_width="fill_parent" android:layout_height="56.0dip"
+            android:text="Business Expense" android:textAllCaps="false" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" app:cornerRadius="8.0dip" style="@style/whiteButtonloginhomepage111111" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/framehistrorical_balances"
+        android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/historical_balance"
+            android:layout_width="fill_parent" android:layout_height="56.0dip"
+            android:text="Historical Balances" android:textAllCaps="false" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" app:cornerRadius="8.0dip" style="@style/whiteButtonloginhomepage111111" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/frameextra_work"
+        android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/extra_work"
+            android:layout_width="fill_parent" android:layout_height="56.0dip"
+            android:text="Adhoc Work Hours" android:textAllCaps="false" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" app:cornerRadius="8.0dip" style="@style/whiteButtonloginhomepage111111" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/frameview_holidays"
+        android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/view_holydays"
+            android:layout_width="fill_parent" android:layout_height="56.0dip"
+            android:text="View Holidays" android:textAllCaps="false" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" app:cornerRadius="8.0dip" style="@style/whiteButtonloginhomepage111111" />
+    </FrameLayout>
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
