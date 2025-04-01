@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/bottomMenu"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            android:elevation="2.0dip"
+            app:contentInsetStart="0.0dip"
+            android:background="@color/changeColor"
+            app:contentInsetStartWithNavigation="0.0dip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/backarrow"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/appnameaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Historical Balances"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_10sdp"
+       >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtYourBusiness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toolBar"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:text="Financial Year 2024-2025"
+                    android:textColor="@color/changeColor"
+                    android:textSize="@dimen/_15sdp" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24.0dip"
+                    android:alpha="0.7"
+                    android:text="Historical Income *" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/Historical_income"
+                    style="@style/txtSubTitleTwo"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36.0dip"
+                    android:background="@color/transparent"
+                    android:hint=""
+                    android:inputType="numberDecimal"
+                    android:paddingEnd="16.0dip"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/etHint" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/black" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24.0dip"
+                    android:alpha="0.7"
+                    android:text="Historical Tax *" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/Historical_tax"
+                    style="@style/txtSubTitleTwo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36.0dip"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:background="@color/transparent"
+                    android:hint=""
+                    android:inputType="numberDecimal"
+                    android:paddingEnd="16.0dip"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/etHint" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/black" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24.0dip"
+                    android:alpha="0.7"
+                    android:text="Historical ACC *" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/Historical_aCC"
+                    style="@style/txtSubTitleTwo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36.0dip"
+                    android:background="@color/transparent"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint=""
+                    android:inputType="numberDecimal"
+                    android:paddingEnd="16.0dip"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/etHint" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/black" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24.0dip"
+                    android:alpha="0.7"
+                    android:visibility="gone"
+                    android:text="Historical GST Collected *" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/Historical_gST_collection"
+                    style="@style/txtSubTitleTwo"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36.0dip"
+                    android:background="@color/transparent"
+                    android:hint=""
+                    android:inputType="numberDecimal"
+                    android:paddingEnd="16.0dip"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/etHint" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:visibility="gone"
+                    android:background="@color/black" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24.0dip"
+                    android:alpha="0.7"
+                    android:visibility="gone"
+                    android:text="Historical GST Claimed *" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/Historical_gST_claimed"
+                    style="@style/txtSubTitleTwo"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36.0dip"
+                    android:background="@color/transparent"
+                    android:hint=""
+                    android:inputType="numberDecimal"
+                    android:paddingEnd="16.0dip"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/etHint" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:visibility="gone"
+                    android:background="@color/black" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24.0dip"
+                    android:alpha="0.7"
+                    android:visibility="gone"
+                    android:text="You can get your historical income, tax and ACC summary from IRD portal Income Summary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/submit"
+                            style="@style/whiteButtonlogingive"
+                            android:layout_width="fill_parent"
+                            android:layout_height="56.0dip"
+                            android:layout_marginStart="3.0dip"
+                            android:layout_marginEnd="3.0dip"
+                            android:text="Save"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_14sdp"
+                            app:cornerRadius="8.0dip" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_700"
+    tools:context=".activity.UserLogin">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/loadingpage"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/txtBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:alpha="0.7"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:visibility="gone"
+        android:text="Phone Number &amp; EmailId" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46.0dip"
+        android:orientation="horizontal"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:weightSum="10"
+        android:layout_marginRight="16.0dip"
+        >
+
+        <RelativeLayout
+            android:id="@+id/linFrequency11111"
+            android:layout_width="0dp"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:visibility="gone"
+            android:background="@drawable/bg_et_login_black">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgCountyFlag"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8.0dip"
+                android:adjustViewBounds="true" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/txtCountryCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/imgCountyFlag"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:hint="+91"
+                android:inputType="numberDecimal"
+                android:paddingStart="8.0dip"
+                android:paddingEnd="4.0dip"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:background="@drawable/bg_et_login_black"
+            android:padding="8.0dip">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/emailaddress"
+                style="@style/txtSubTitleTwo"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:background="@color/transparent"
+                android:hint="Phone Number &amp; EmailId"
+                android:paddingEnd="16.0dip"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/etHint" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="16.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_et_login_black"
+        android:padding="8.0dip">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password"
+            style="@style/txtSubTitleTwo"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@color/transparent"
+            android:hint="Password"
+            android:paddingEnd="16.0dip"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/etHint" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:visibility="gone"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:hint="Enter phone number" style="@style/etOutLine">
+        <com.google.android.material.textfield.TextInputEditText
+             android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textCapWords" style="@style/txtBody" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+    <FrameLayout  android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="fill_parent" android:layout_height="56.0dip"
+            android:text="Log In"
+            android:id="@+id/login"
+            android:textAllCaps="false" android:layout_marginStart="16.0dip"
+            android:layout_marginEnd="16.0dip" app:cornerRadius="8.0dip" style="@style/whiteButton" />
+    </FrameLayout>
+
+    <TextView
+        android:textColor="@color/changeColor"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14sdp"
+        android:id="@+id/forgetpassword"
+        android:layout_marginTop="30.0dip"
+        android:text="Forgot password?"
+        android:visibility="gone"
+        style="@style/txtTitle" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

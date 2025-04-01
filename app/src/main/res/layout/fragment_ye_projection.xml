@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple_700"
+    tools:context=".fragment.yeprojection.YeProjectionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="usename"
+        android:id="@+id/usename"
+        android:textStyle="bold"
+        android:textColor="@color/changeColor"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"/>
+
+
+
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/usename"
+       android:id="@+id/userfinanceavailable"
+       android:visibility="gone"
+       android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="14.0dip"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="10">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/txtBody"
+            android:layout_width="wrap_content"
+            android:layout_height="36.0dip"
+            android:gravity="center_vertical"
+            android:text="Your YE projection for"
+            android:textColor="@color/changeColor"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/financialyear"
+            style="@style/txtSubTitleTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="30.0dip"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:textStyle="bold"
+            android:cursorVisible="false"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:drawableTint="@color/changeColor"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:hint="2023-2024"
+            android:textColorHint="@color/changeColor"
+            android:inputType="textCapWords"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/changeColor"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/_13sdp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <ir.mahozad.android.PieChart
+           android:layout_marginTop="@dimen/_10sdp"
+           android:layout_below="@+id/userfinanceavailable"
+           android:id="@+id/pieChart"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginHorizontal="@dimen/_10sdp"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_200sdp" />
+
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/pieChartone"
+           android:orientation="horizontal"
+           android:layout_below="@id/pieChart"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:layout_marginHorizontal="@dimen/_10sdp"
+           android:gravity="center"
+           >
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="@dimen/_15sdp"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+               >
+
+               <!--View to display the blue color icon-->
+               <View
+                   android:layout_width="@dimen/_15sdp"
+                   android:layout_height="match_parent"
+                   android:background="@color/BLUE"/>
+
+               <!--Text view to display Java text -->
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Sample 1"
+                   android:textStyle="bold"
+                   android:paddingLeft="@dimen/_10sdp"/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="@dimen/_15sdp"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+               >
+
+               <!--View to display the blue color icon-->
+               <View
+                   android:layout_width="@dimen/_15sdp"
+                   android:layout_height="match_parent"
+                   android:background="@color/MAGENTA"/>
+
+               <!--Text view to display Java text -->
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Sample 2"
+                   android:textStyle="bold"
+                   android:paddingLeft="@dimen/_10sdp"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="@dimen/_15sdp"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+               >
+
+               <!--View to display the blue color icon-->
+               <View
+                   android:layout_width="@dimen/_15sdp"
+                   android:layout_height="match_parent"
+                   android:background="@color/black"/>
+
+               <!--Text view to display Java text -->
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Sample 3"
+                   android:textStyle="bold"
+                   android:paddingLeft="@dimen/_10sdp"/>
+
+           </LinearLayout>
+
+
+
+
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_below="@id/pieChartone"
+           android:id="@+id/pieCharttwo"
+           android:layout_marginTop="@dimen/_5sdp"
+           android:layout_marginHorizontal="@dimen/_10sdp"
+           android:gravity="center"
+           >
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="@dimen/_15sdp"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+               >
+
+               <!--View to display the blue color icon-->
+               <View
+                   android:layout_width="@dimen/_15sdp"
+                   android:layout_height="match_parent"
+                   android:background="@color/RED"/>
+
+               <!--Text view to display Java text -->
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Sample 4"
+                   android:textStyle="bold"
+                   android:paddingLeft="@dimen/_10sdp"/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="@dimen/_15sdp"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+               >
+
+               <!--View to display the blue color icon-->
+               <View
+                   android:layout_width="@dimen/_15sdp"
+                   android:layout_height="match_parent"
+                   android:background="@color/Green"/>
+
+               <!--Text view to display Java text -->
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Sample 5"
+                   android:textStyle="bold"
+                   android:paddingLeft="@dimen/_10sdp"/>
+
+           </LinearLayout>
+
+
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+   </androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Please add an active employment for ongoing or upcoming financial year to see your year end projections"
+        android:id="@+id/financeuseridnotfound"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:textColor="@color/changeColor"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginLeft="@dimen/_10sdp"/>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="fill_parent"
+                android:layout_height="56.0dip"
+                android:text="File My Taxes"
+                android:textAllCaps="false"
+                android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" app:cornerRadius="8.0dip"
+                style="@style/whiteButtonloginhomepage111111" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="fill_parent"
+                android:layout_height="56.0dip"
+                android:text="Export Data"
+                android:textAllCaps="false"
+                android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" app:cornerRadius="8.0dip"
+                style="@style/whiteButtonloginhomepage111111" />
+        </FrameLayout>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</RelativeLayout>

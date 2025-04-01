@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linetwo"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@color/changeColor"
+    android:backgroundTint="@color/changeColor"
+    app:cardCornerRadius="@dimen/_5sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_10sdp"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTitle112"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_weight="6"
+                android:ellipsize="end"
+                android:justificationMode="inter_word"
+                android:text="totaldays"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/txtMessage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitle112"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:text="Start Date" />
+
+
+            <ImageView
+                android:id="@+id/txtDate2"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_toLeftOf="@id/update"
+                android:src="@drawable/ic_baseline_remove_red_eye_24"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_alignParentRight="true"
+                app:tint="@color/white"
+                android:src="@drawable/ic_baseline_delete_24" />
+
+            <ImageView
+                android:id="@+id/update"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_toLeftOf="@id/delete"
+                app:tint="@color/white"
+                android:src="@drawable/ic_edit_black_24dp" />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

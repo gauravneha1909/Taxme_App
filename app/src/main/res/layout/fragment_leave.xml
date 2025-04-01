@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.leave.LeaveFragment">
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.leave.LeaveFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:orientation="vertical">
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/txtBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24.0dip"
+                android:alpha="0.7"
+                android:text="Start Date" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/startdateline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:background="@drawable/bg_et"
+                android:padding="8.0dip">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_calendar"
+                    app:tint="@android:color/darker_gray" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtstartdate"
+                    style="@style/txtSubTitleThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16.0dip"
+                    android:text="" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/txtBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24.0dip"
+                android:alpha="0.7"
+                android:text="End Date" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/employeenddateline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:background="@drawable/bg_et"
+                android:padding="8.0dip">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_calendar"
+                    app:tint="@android:color/darker_gray" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtendDate"
+                    style="@style/txtSubTitleThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16.0dip"
+                    android:text="" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit"
+                style="@style/whiteButtonlogingive"
+                android:layout_width="fill_parent"
+                android:layout_height="56.0dip"
+                android:text="Search"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_14sdp"
+                app:cornerRadius="8.0dip" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+    <include layout="@layout/bottom_sheet"
+        android:id="@+id/bottonsheet11"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

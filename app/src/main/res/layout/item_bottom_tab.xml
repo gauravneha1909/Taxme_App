@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:id="@+id/linBottomMenu"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="@drawable/backbottom"
+    android:backgroundTint="@color/purple_700"
+    android:elevation="2.0dip"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linTabHome"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="?selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgTabHome"
+            app:tint="@color/changeColor"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_baseline_pie_chart_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTabHome"
+            style="@style/txtOverline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="YE Projections"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/changeColor"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linleave"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:visibility="visible"
+        android:background="?selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgTableave"
+            app:tint="@color/changeColor"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/orderhistory" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTableave"
+            style="@style/txtOverline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Paychecks"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/changeColor"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/comming"
+        android:background="@color/changeColor" android:visibility="visible" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/imgCommingimage"
+            android:layout_width="@dimen/_25sdp"
+            app:tint="@color/purple_700"
+            android:layout_height="@dimen/_20sdp" app:srcCompat="@drawable/ordernotification" />
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/txtOverline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/comingtext"
+            android:text="Add/View Details"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
